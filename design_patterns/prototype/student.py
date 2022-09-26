@@ -1,3 +1,7 @@
+import zope.interface
+from prototype_interface import ProtoTypeInterface
+
+@zope.interface.implementer(ProtoTypeInterface)
 class Student:
 
     def __init__(self, otherStudent=None,  name=None,
